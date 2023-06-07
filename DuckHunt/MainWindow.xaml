@@ -1,0 +1,9 @@
+﻿<Window x:Class="DuckHuntGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Duck Hunt" Height="450" Width="800"
+        Loaded="Window_Loaded">
+    <Canvas x:Name="canvas" Background="LightBlue" MouseDown="Canvas_MouseDown">
+        <TextBlock x:Name="scoreText" FontSize="24" FontWeight="Bold" Canvas.Left="10" Canvas.Top="10" />
+    </Canvas>
+</Window>
