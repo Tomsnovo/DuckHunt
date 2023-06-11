@@ -3,7 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Duck Hunt" Height="450" Width="800"
         Loaded="Window_Loaded">
-    <Canvas x:Name="canvas" Background="LightBlue" MouseDown="Canvas_MouseDown">
-        <TextBlock x:Name="scoreText" FontSize="24" FontWeight="Bold" Canvas.Left="10" Canvas.Top="10" />
-    </Canvas>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="198*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="scoreText" FontSize="24" FontWeight="Bold" Text="Score" Margin="671,0,0,3" />
+        <Canvas x:Name="canvas" Background="LightBlue" MouseDown="Canvas_MouseDown" Grid.RowSpan="2" Margin="0,38,0,0"/>
+    </Grid>
+
+
 </Window>

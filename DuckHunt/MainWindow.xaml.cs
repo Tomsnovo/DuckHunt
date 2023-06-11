@@ -56,10 +56,16 @@ namespace DuckHuntGame
                 score++;
                 scoreText.Text = "Score: " + score;
             }
+            else
+            {
+                score--;
+                scoreText.Text = "Score: " + score;
+            }
         }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
+            canvas.Children.Clear();
             GenerateTarget();
         }
 
